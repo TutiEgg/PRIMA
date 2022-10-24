@@ -1,1 +1,134 @@
-{}
+{
+  "Graph|2022-10-24T10:17:38.585Z|67232": {
+    "ƒ.Graph": {
+      "name": "Sprite",
+      "active": true,
+      "components": {
+        "ComponentMesh": [],
+        "ComponentMaterial": []
+      },
+      "children": [
+        {
+          "ƒ.Node": {
+            "name": "New Node",
+            "active": true,
+            "components": {},
+            "children": []
+          }
+        }
+      ],
+      "idResource": "Graph|2022-10-24T10:17:38.585Z|67232",
+      "type": "Graph"
+    }
+  },
+  "MeshSprite|2022-10-24T10:18:00.246Z|44997": {
+    "ƒ.MeshSprite": {
+      "idResource": "MeshSprite|2022-10-24T10:18:00.246Z|44997",
+      "name": "MeshSprite",
+      "type": "MeshSprite"
+    }
+  },
+  "TextureImage|2022-10-24T10:18:14.442Z|63441": {
+    "ƒ.TextureImage": {
+      "url": "Script\\Sprite\\Assets\\Mario.png",
+      "type": "TextureImage",
+      "Texture": {
+        "idResource": "TextureImage|2022-10-24T10:18:14.442Z|63441",
+        "name": "Script\\Sprite\\Assets\\Mario.png",
+        "mipmap": "CRISP"
+      }
+    }
+  },
+  "Material|2022-10-24T10:18:26.684Z|49227": {
+    "ƒ.Material": {
+      "name": "ShaderLitTextured",
+      "idResource": "Material|2022-10-24T10:18:26.684Z|49227",
+      "shader": "ShaderLitTextured",
+      "coat": {
+        "ƒ.CoatTextured": {
+          "color": "[1, 1, 1, 1]",
+          "idTexture": "TextureImage|2022-10-24T10:18:14.442Z|63441"
+        }
+      }
+    }
+  },
+  "Graph|2022-10-24T10:21:22.555Z|34559": {
+    "ƒ.Graph": {
+      "name": "Enviroment",
+      "active": true,
+      "components": {},
+      "children": [
+        {
+          "ƒ.Node": {
+            "name": "Ground_Block",
+            "active": true,
+            "components": {
+              "ComponentMesh": [
+                {
+                  "ƒ.ComponentMesh": {
+                    "idMesh": "MeshCube|2022-10-24T10:21:46.991Z|22837",
+                    "pivot": {
+                      "translation": "[0, 0, 0]",
+                      "rotation": "[0, 0, 0]",
+                      "scaling": "[1, 1, 1]"
+                    },
+                    "Component": {
+                      "active": true
+                    }
+                  }
+                }
+              ],
+              "ComponentMaterial": [
+                {
+                  "ƒ.ComponentMaterial": {
+                    "sortForAlpha": false,
+                    "clrPrimary": "[1, 1, 1, 1]",
+                    "clrSecondary": "[1, 1, 1, 1]",
+                    "pivot": {
+                      "translation": "[0, 0]",
+                      "rotation": 0,
+                      "scaling": "[1, 1]"
+                    },
+                    "Component": {
+                      "active": true
+                    },
+                    "idMaterial": "Material|2022-10-24T10:22:07.943Z|97886"
+                  }
+                }
+              ]
+            },
+            "children": []
+          }
+        },
+        {
+          "ƒ.GraphInstance": {
+            "deserializeFromSource": true,
+            "name": "Sprite",
+            "idSource": "Graph|2022-10-24T10:17:38.585Z|67232"
+          }
+        }
+      ],
+      "idResource": "Graph|2022-10-24T10:21:22.555Z|34559",
+      "type": "Graph"
+    }
+  },
+  "MeshCube|2022-10-24T10:21:46.991Z|22837": {
+    "ƒ.MeshCube": {
+      "idResource": "MeshCube|2022-10-24T10:21:46.991Z|22837",
+      "name": "Ground_Block",
+      "type": "MeshCube"
+    }
+  },
+  "Material|2022-10-24T10:22:07.943Z|97886": {
+    "ƒ.Material": {
+      "name": "Tex_Ground_Block",
+      "idResource": "Material|2022-10-24T10:22:07.943Z|97886",
+      "shader": "ShaderLitTextured",
+      "coat": {
+        "ƒ.CoatTextured": {
+          "color": "[1, 1, 1, 1]"
+        }
+      }
+    }
+  }
+}

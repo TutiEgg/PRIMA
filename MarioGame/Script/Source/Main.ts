@@ -16,7 +16,7 @@ namespace Script {
     console.log(viewport);
     let branch: ƒ.Node = viewport.getBranch();
     console.log(branch);
-    marioPos= branch.getChildrenByName("MarioPosition")[0]; // get Sprite by name
+    marioPos= branch.getChildrenByName("Sprite")[0]; // get Sprite by name
     console.log("Mario",marioPos);
   }
 

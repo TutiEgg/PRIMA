@@ -9,3 +9,5 @@ declare namespace Script {
 }
 declare namespace Script {
 }
+declare namespace Test_sprites {
+}
